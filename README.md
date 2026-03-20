@@ -32,6 +32,9 @@ This branch houses the codebase of Lawnchair 15, which is currently in beta and 
 -   **Customization Options:** Provides options to tweak icons, fonts, and colors to your liking.
 -   And more!
 
+## Fork features
+-   **Hidden app search:** Search for hidden app, using a prefix (default: `!h`).
+
 ## Download
 
 <p align="left">
