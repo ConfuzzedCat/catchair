@@ -247,6 +247,11 @@ class PreferenceManager2 private constructor(private val context: Context) :
         defaultValue = setOf(),
         onSet = { reloadHelper.reloadGrid() },
     )
+    val hiddenSearchPrefix = preference(
+        key = stringPreferencesKey(name = "hidden_apps_prefix"),
+        defaultValue = "!h",
+        onSet = { reloadHelper.reloadGrid() },
+    )
 
     val roundedWidgets = preference(
         key = booleanPreferencesKey(name = "rounded_widgets"),

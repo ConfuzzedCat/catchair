@@ -35,6 +35,7 @@ class AboutViewModel(
                 commitHash = BuildConfig.COMMIT_HASH,
                 coreTeam = team,
                 supportAndPr = supportAndPr,
+                catChairLinks = catChairLinks,
                 topLinks = topLinks,
                 bottomLinks = bottomLinks,
             )
@@ -212,7 +213,6 @@ class AboutViewModel(
                 url = "https://x.com/lawnchairapp",
             ),
         )
-
         private val supportAndPr = listOf(
             TeamMember(
                 name = "Daniel Souza",
@@ -231,6 +231,14 @@ class AboutViewModel(
                 role = Role.SupportAndPr,
                 photoUrl = "https://avatars.githubusercontent.com/u/29402532",
                 socialUrl = "https://x.com/rikkoedoot",
+            ),
+        )
+        private val catChairLinks = listOf(
+            TeamMember(
+                name = "ConfuzzedCat",
+                role = Role.Development,
+                photoUrl = "https://avatars.githubusercontent.com/u/73724128",
+                socialUrl = "https://github.com/ConfuzzedCat",
             ),
         )
     }

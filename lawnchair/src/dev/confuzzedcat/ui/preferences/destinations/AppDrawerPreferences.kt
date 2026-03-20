@@ -30,8 +30,6 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -48,6 +46,7 @@ import app.lawnchair.ui.preferences.components.colorpreference.ColorPreference
 import app.lawnchair.ui.preferences.components.controls.SliderPreference
 import app.lawnchair.ui.preferences.components.controls.SwitchPreference
 import app.lawnchair.ui.preferences.components.controls.SwitchPreferenceWithPreview
+import app.lawnchair.ui.preferences.components.controls.TextPreference
 import app.lawnchair.ui.preferences.components.layout.DividerColumn
 import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
 import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
@@ -84,6 +83,12 @@ fun AppDrawerPreferences(
                 label = stringResource(id = R.string.hidden_apps_label),
                 subtitle = resources.getQuantityString(R.plurals.apps_count, hiddenApps.size, hiddenApps.size),
                 destination = AppDrawerHiddenApps,
+            )
+            val hiddenSearchPrefix = prefs2.hiddenSearchPrefix.getAdapter().state.value
+            TextPreference(
+                label = stringResource(id = R.string.hidden_apps_prefix_label),
+                description = { hiddenSearchPrefix },
+                adapter = prefs2.hiddenSearchPrefix.getAdapter()
             )
             SearchBarPreference(SearchRoute.DRAWER_SEARCH, showLabel = false)
             SuggestionsPreference()

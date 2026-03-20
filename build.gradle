@@ -244,11 +244,11 @@ android {
 
         debug {
             applicationIdSuffix ".debug"
-            resValue("string", "derived_app_name", "Lawnchair (Debug)")
+            resValue("string", "derived_app_name", "CatChair (Debug)")
         }
 
         release {
-            resValue("string", "derived_app_name", "Lawnchair")
+            resValue("string", "derived_app_name", "CatChair")
             minifyEnabled true
             shrinkResources true
             proguardFiles proguardFilesFromAosp + "proguard.pro"
@@ -278,17 +278,17 @@ android {
         }
 
         github {
-            applicationId 'app.lawnchair'
+            applicationId 'dev.confuzzedcat.catchair'
             dimension "channel"
         }
 
         nightly {
-            applicationId 'app.lawnchair.nightly'
+            applicationId 'dev.confuzzedcat.catchair.nightly'
             dimension "channel"
         }
 
         play {
-            applicationId "app.lawnchair.play"
+            applicationId "dev.confuzzedcat.catchair.play"
             dimension "channel"
             isDefault true
         }

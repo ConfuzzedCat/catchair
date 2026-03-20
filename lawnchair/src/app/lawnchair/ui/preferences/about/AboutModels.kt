@@ -27,6 +27,7 @@ data class AboutUiState(
     val topLinks: List<Link> = emptyList(),
     val bottomLinks: List<Link> = emptyList(),
     val updateState: UpdateState = UpdateState.Hidden,
+    val catChairLinks: List<TeamMember> = emptyList(),
 )
 
 /**
