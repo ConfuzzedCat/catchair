@@ -210,7 +210,7 @@
     <string name="label_size">Tamanho dos rótulos</string>
     <string name="twoline_label">Usa múltiplas linhas</string>
     <!-- Icon-related settings -->
-    <string name="transparent_background_icons_label">Ícones Temáticos 
+    <string name="transparent_background_icons_label">Ícones Temáticos
 Transparentes</string>
     <string name="transparent_background_icons_description">Usar fundo transparente nos ícones temáticos</string>
     <string name="auto_adaptive_icons_label">Ícones auto-adaptáveis</string>
@@ -708,4 +708,5 @@ Transparentes</string>
     <string name="grant_requested_permissions_tap">Ativar permissões</string>
     <!-- Message shown when all home screen views are removed -->
     <string name="home_screen_all_views_removed_msg">Home screen cleared</string>
+    <string name="hidden_apps_prefix_label">Hidden apps search prefix</string>
 </resources>

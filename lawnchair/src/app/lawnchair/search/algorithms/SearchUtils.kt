@@ -72,3 +72,8 @@ fun Sequence<AppInfo>.filterHiddenApps(
         }
     }
 }
+fun Sequence<AppInfo>.filterHiddenAppsHiddenPrefix(
+    hiddenApps: Set<String>,
+): Sequence<AppInfo> {
+    return filter { it.toComponentKey().toString() in hiddenApps }
+}

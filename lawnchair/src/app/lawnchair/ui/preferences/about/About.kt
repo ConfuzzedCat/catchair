@@ -208,6 +208,16 @@ fun About(
             )
         }
         preferenceGroupItems(
+            items = uiState.catChairLinks,
+            key = { _, it -> it.name },
+            isFirstChild = false,
+            heading = { "CatChair" },
+        ) { _, it ->
+            ContributorRow(
+                member = it,
+            )
+        }
+        preferenceGroupItems(
             items = uiState.bottomLinks,
             key = { _, it -> it.labelResId },
             isFirstChild = false,
